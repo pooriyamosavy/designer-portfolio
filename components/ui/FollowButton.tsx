@@ -42,7 +42,7 @@ export default function FollowButton({ children }: Props) {
       onMouseLeave={resetTransform}
       className="inline-block relative"
     >
-      <div className="absolute -inset-10 " />
+      <div className="absolute -inset-10 md:block hidden" />
       <div ref={buttonRef}>{children}</div>
     </div>
   );

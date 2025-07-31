@@ -10,16 +10,14 @@ export default async function Hero() {
         <ParticlesBG />
       </div>
       <div className="relative z-10 flex flex-col justify-center items-center size-full">
-        {/* label */}
-        <div className="bg-gradient-to-r from-[#120083] to-[#4122FF] flex items-center gap-2 text-white text-[18px] h-[46px] px-4 rounded-full">
+        <div className="bg-gradient-to-r from-[#120083] to-[#4122FF] flex items-center gap-2 text-white md:text-[18px] text-base h-[46px] px-4 rounded-full">
           <div className="relative size-[12px]">
             <div className="bg-[#FAA381] size-[12px] rounded-full absolute inset-0 animate-ping animation-duration-[2000ms]" />
             <div className="bg-[#FAA381] size-[12px] rounded-full absolute inset-0" />
           </div>
           Fateme Khoshnudi
         </div>
-        {/* title */}
-        <div className="text-white text-[72px] text-center">
+        <div className="text-white md:text-[72px] text-[32px] text-center mt-10">
           <h2>Not just pixels</h2>
           <h2 className="flex items-center gap-2">
             I
@@ -31,10 +29,11 @@ export default async function Hero() {
             </div>
           </h2>
         </div>
-        {/* description */}
         <div className="flex flex-col items-center gap-5">
-          <h2 className="text-[#B4B4B4] mt-10">From first tap to final wow</h2>
-          <HoverCircleButton title="Design-driven" />
+          <h2 className="text-[#B4B4B4] text-sm mt-10">
+            From first tap to final wow
+          </h2>
+          <HoverCircleButton title="show case" />
         </div>
       </div>
     </div>

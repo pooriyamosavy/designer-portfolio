@@ -29,11 +29,11 @@ const Skills = [
 export default async function Skill() {
   return (
     <div className="bg-gradient-to-b relative from-[#08041F] from-0% via-[#311ABF] via-50% to-[#08041F] to-100% py-[100px]">
-      <div className="bg-size text-[39px] text-center bg-gradient-to-r from-[#735AFF] from-20% to-[#E2DFFF] bg-clip-text text-transparent font-bold">
+      <div className="bg-size md:text-[39px] text-[28px] text-center bg-gradient-to-r from-[#735AFF] from-20% to-[#E2DFFF] bg-clip-text text-transparent font-bold">
         UI/UX Skills Summary
       </div>
 
-      <div className="mt-[20px] space-y-10">
+      <div className="md:mt-[20px] mt-[50px] space-y-10 px-4">
         {Skills.map(({ desc, img, number, title1, title2 }, index) => {
           return (
             <div
@@ -43,7 +43,7 @@ export default async function Skill() {
                 background: "linear-gradient(66deg, #040111 0%, #2D18AC 100%)",
               }}
             >
-              <div className="w-1/2 flex flex-col gap-5 text-white">
+              <div className="md:w-1/2 flex flex-col gap-5 text-white">
                 <Image
                   alt=""
                   src={number}
@@ -51,7 +51,7 @@ export default async function Skill() {
                   height={300}
                   className="size-10"
                 />
-                <div className="text-[65px] font-bold leading-[80%]">
+                <div className="md:text-[65px] text-[30px] font-bold md:leading-[80%] leading-[100%]">
                   <h2>{title1}</h2>
                   {title2 && (
                     <div className="relative w-min">
@@ -60,14 +60,14 @@ export default async function Skill() {
                     </div>
                   )}
                 </div>
-                <p>{desc}</p>
+                <p className="text-[14px]">{desc}</p>
               </div>
               <Image
                 alt=""
                 src={img}
                 width={1000}
                 height={1000}
-                className="w-1/2"
+                className="w-1/2 hidden md:block"
               />
             </div>
           );

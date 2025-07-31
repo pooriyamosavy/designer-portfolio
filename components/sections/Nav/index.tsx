@@ -7,8 +7,10 @@ import React from "react";
 
 export default async function Nav() {
   return (
-    <div className="absolute z-20 top-[23px] inset-x-0 flex items-center justify-between px-[96px]">
-      <AnimatedGradientText text="UI UX Designer" />
+    <div className="absolute z-20 top-[23px] inset-x-0 flex items-center justify-between md:px-[96px] px-4">
+      <div className="text-[12px]">
+        <AnimatedGradientText text="UI UX Designer" />
+      </div>
       <FollowButton>
         <HoverCircleButton title="Contact me" />
       </FollowButton>
