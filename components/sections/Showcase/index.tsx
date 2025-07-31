@@ -139,29 +139,31 @@ export default function Showcase() {
             1024: { slidesPerView: 3 },
           }}
         >
-          {showcase.map(({ img, placement, title }, index) => (
+          {showcase.map(({ img, placement, title, link }, index) => (
             <SwiperSlide key={index}>
-              <div className="relative overflow-hidden bg-[#1A202C] md:h-[700px] h-[600px] rounded-[50px] group">
-                <Image
-                  alt=""
-                  src={img}
-                  width={placement === "center" ? 238 : 341}
-                  height={placement === "center" ? 488 : 408}
-                  className={cn("absolute top-1/2 -translate-y-1/2", {
-                    "left-1/2 -translate-x-1/2": placement === "center",
-                    "right-0": placement === "right",
-                    "left-0": placement === "left",
-                  })}
-                />
-                <div className="absolute top-[25px] z-10 right-[20px] size-[70px] rounded-full bg-neutral-400 flex justify-center items-center">
-                  <ArrowUpRight size={40} />
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <div className="relative overflow-hidden bg-[#1A202C] md:h-[700px] h-[600px] rounded-[50px] group">
+                  <Image
+                    alt=""
+                    src={img}
+                    width={placement === "center" ? 238 : 341}
+                    height={placement === "center" ? 488 : 408}
+                    className={cn("absolute top-1/2 -translate-y-1/2", {
+                      "left-1/2 -translate-x-1/2": placement === "center",
+                      "right-0": placement === "right",
+                      "left-0": placement === "left",
+                    })}
+                  />
+                  <div className="absolute top-[25px] z-10 right-[20px] size-[70px] rounded-full bg-neutral-400 flex justify-center items-center">
+                    <ArrowUpRight size={40} />
+                  </div>
+                  <div className="absolute bottom-10 inset-x-10 text-white z-20">
+                    <h6 className="text-[15px]">Ui UX</h6>
+                    <h2 className="text-[28px]">{title}</h2>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t z-10 from-[#050312] to-transparent" />
                 </div>
-                <div className="absolute bottom-10 inset-x-10 text-white z-20">
-                  <h6 className="text-[15px]">Ui UX</h6>
-                  <h2 className="text-[28px]">{title}</h2>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t z-10 from-[#050312] to-transparent" />
-              </div>
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>

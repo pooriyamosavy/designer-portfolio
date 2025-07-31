@@ -33,6 +33,7 @@ export default function ReachOut() {
 
   return (
     <div
+      id="contact"
       onMouseMove={!isMobile ? handleMouseMove : undefined}
       className="bg-[#08041F] relative md:p-[50px] h-screen text-white flex items-center justify-center overflow-hidden"
     >

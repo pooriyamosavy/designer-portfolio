@@ -22,7 +22,14 @@ const Skills = [
     number: "/skillNumber/03.svg",
     title1: "Tools",
     desc: "I design and prototype with Figma, Adobe XD, and Illustrator, while collaborating seamlessly using Miro and FigJam.",
-    img: "/skills/DesignSkill.svg",
+    img: "/skills/Tool.svg",
+  },
+  {
+    number: "/skillNumber/04.svg",
+    title1: "Soft",
+    title2: "Skills",
+    desc: "Designing with empathy, thinking with clarity, and working with people — that’s how I turn ideas into impact.",
+    img: "/skills/SoftSkill.svg",
   },
 ];
 

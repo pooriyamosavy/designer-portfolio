@@ -12,7 +12,9 @@ export default async function Nav() {
         <AnimatedGradientText text="UI UX Designer" />
       </div>
       <FollowButton>
-        <HoverCircleButton title="Contact me" />
+        <a href={"#contact"}>
+          <HoverCircleButton title="Contact me" />
+        </a>
       </FollowButton>
     </div>
   );

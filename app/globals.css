@@ -44,6 +44,11 @@
   --animate-bg-position: bg-position 3s infinite alternate;
 }
 
+body,
+* {
+  scroll-behavior: smooth;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
